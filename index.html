@@ -25,34 +25,42 @@
             color: black;
         }
 
-        #p1 {
-            width: 150%;
-            height: 80%;
-        }
-
-        #p2 {
-            width: 150%;
-            height: 80%;
-        }
-
-        #p3 {
+        #p1, #p2, #p3{
             width: 150%;
             height: 80%;
         }
 
         /********** Medium devices only **********/
         @media (min-width: 992px) {
-
+            #p1, #p2, #p3 {
+                float: left;
+            }
         }
 
         /********** Small devices only **********/
         @media (min-width: 768px) and (max-width: 991px) {
-            
+            #p1, #p2, #p3 {
+                float: left;
+            }
+            #p1, #p2 {
+                width: 120%;
+                height: 100%;
+            }
+            #p3 {
+                width: 240%;
+                height: 100%;
+            }
         }
 
         /********** Extra small devices only **********/
         @media (max-width: 767px) {
-
+            #p1, #p2, #p3 {
+                float: left;
+            }
+            #p1, #p2, #p3 {
+                width: auto;
+                height: auto;
+            }
         }
 
         
